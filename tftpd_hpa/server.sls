@@ -3,7 +3,7 @@
 
 tftpd_hpa_package:
   pkg.installed:
-  - pkgs: {{ server.pkgs }}
+  - pkgs: {{ server.pkgs|yaml }}
 
 tftpd_hpa_service:
   service.running:
